@@ -1,0 +1,55 @@
+.Votes{
+    width: 40px;
+    border-left: 4px solid transparent;
+    height: 100%;
+    left: 0;
+    padding: 8px 4px 8px 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media (max-width: 640px) {
+    .Votes{
+        display: none;
+        width: 0;
+    }
+    .Search{
+        margin-right: 9px;
+        margin-left: 3px;
+
+    }
+}
+
+
+.Arrow-up, .Arrow-down {
+    height: 24px;
+    width: 24px;
+    font-family: FontAwesome, serif;
+    color: rgb(129, 131, 132);
+    border-radius: 2px;
+    transition: background-color 0.1s ease 0s;
+}
+
+.Arrow-up:hover{
+    color: #FF4500;
+}
+.Arrow-down:hover {
+    color: rgb(90, 117, 204);
+}
+.Arrow-up:before {
+    content: "\f062";
+}
+.Arrow-down:before {
+    content: "\f063";
+}
+
+.Votes__number{
+    color: #D7DADC;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    vertical-align: baseline;
+}
